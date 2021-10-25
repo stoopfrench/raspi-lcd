@@ -18,18 +18,17 @@ int main(void)
         return 0;
     }
     usleep(150*1000);                                                  //Short delay Ensure the normal response of the lower function
-    FirstGetIpAddress();                        //Get IP address
+    // FirstGetIpAddress(); 
+    LCD_DisplayHostName("MqttPi");
     while(1)
     {
-        LCD_Display(symbol);
-        sleep(1);
-        sleep(1);
-        sleep(1);
-        symbol++;
-        if(symbol==3)
-        {
-          symbol=0;
-        }
+    sleep(1);
+    sleep(1);
+    sleep(1);
+    sleep(1);
+    sleep(1);
+    LCD_DisPlayCpuMemory();
+
     }
     return 0;
 }

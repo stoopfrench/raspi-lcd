@@ -456,3 +456,14 @@ char* GetIpAddress(void)
     }
     /* display result */
 }
+
+/*
+*  Show hostname
+*/
+void LCD_DisplayHostName(unsigned char *name)
+{
+  OLED_Clear();                                        //Remove the interface
+  OLED_ShowString(45,0,name,sizeof(name));
+  OLED_ShowString(0,1,"----------------", 16);
+}
+
