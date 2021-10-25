@@ -292,7 +292,7 @@ unsigned char Obaintemperature(void)
 /*
 *  LCD displays CPU memory and other information
 */
-void LCD_DisPlayCpuMemory(void)
+void LCD_DisplayCpuMemory(void)
 {
   struct sysinfo s_info;
   float Totalram=0.0;
@@ -402,7 +402,7 @@ void LCD_Display(unsigned char symbol)
       LCD_DisplayTemperature();
     break;
     case 1:
-      LCD_DisPlayCpuMemory();
+      LCD_DisplayCpuMemory();
     break;
     case 2:
       LCD_DisplaySdMemory();
@@ -462,7 +462,7 @@ char* GetIpAddress(void)
 */
 void LCD_DisplayHostName(unsigned char *name)
 {
-  OLED_Clear();                                        //Remove the interface
+  OLED_Clear();                                        
   OLED_ShowString(45,0,name,sizeof(name));
   OLED_ShowString(0,1,"----------------", 16);
 }

@@ -32,7 +32,7 @@ void OLED_ClearLint(unsigned char,unsigned char);
 void OLED_ShowNum(unsigned char,unsigned char,unsigned int,unsigned char,unsigned char);
 unsigned int oled_pow(unsigned char,unsigned char);
 void LCD_Display(unsigned char symbol);
-void LCD_DisPlayCpuMemory(void);
+void LCD_DisplayCpuMemory(void);
 void LCD_DisplaySdMemory(void);
 void FirstGetIpAddress(void);
 void LCD_DisplayHostName(unsigned char *name);
