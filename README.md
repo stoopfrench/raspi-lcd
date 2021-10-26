@@ -1,4 +1,4 @@
-# U6143_ssd1306
+# Raspberry Pi LCD
 ## Enable i2c 
 ```bash
 sudo raspi-config
