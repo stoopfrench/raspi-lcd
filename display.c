@@ -20,8 +20,8 @@ int main(void)
     LCD_DisplayHostName("MqttPi");
     while(1)
     {
-    sleep(5);
     LCD_DisplayCpuMemory();
+    sleep(5);
     }
     return 0;
 }
