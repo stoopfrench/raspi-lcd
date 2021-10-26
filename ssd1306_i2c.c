@@ -464,6 +464,5 @@ void LCD_DisplayHostName(unsigned char *name)
 {
   OLED_Clear();                                        
   OLED_ShowString(45,0,name,sizeof(name));
-  OLED_ShowString(0,1,"----------------", 16);
 }
 
