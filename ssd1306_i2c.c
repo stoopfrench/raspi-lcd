@@ -460,9 +460,11 @@ char* GetIpAddress(void)
 /*
 *  Show hostname
 */
-void LCD_DisplayHostName(unsigned char *name)
+void LCD_DisplayHostName(void)
 {
-  OLED_Clear();                                        
-  OLED_ShowString(45,0,name,sizeof(name));
+  char hostname[20];
+  gethostname(hostname,sizeof(hostname));                                        
+  OLED_Clear();
+  OLED_ShowString(45,0,hostname,sizeof(hostname));
 }
 
